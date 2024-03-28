@@ -16,7 +16,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className=" flex p-1">Recipies for ninjas</nav>
+        {children}
+      </body>
     </html>
   );
 }
