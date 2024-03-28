@@ -13,6 +13,8 @@ export default function Board({ size }: BoardProps) {
   }
 
   return (
-    <div className="grid grid-cols-10 gap-1 bg-orange-600 p-1">{squares}</div>
+    <div className="grid grid-cols-10 gap-1 bg-orange-600 p-1 w-1/3 h-96 font-extrabold">
+      {squares}
+    </div>
   );
 }

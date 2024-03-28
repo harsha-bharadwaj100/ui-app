@@ -6,7 +6,7 @@ interface BoardSquareProps {
 
 const BoardSquare: React.FC<BoardSquareProps> = ({ value }) => {
   return (
-    <div className="flex-auto border-2 bg-blue-300 aspect-w-1 aspect-h-1">
+    <div className="flex border-2 bg-blue-300 h-full justify-center items-center">
       {value}
     </div>
   );
