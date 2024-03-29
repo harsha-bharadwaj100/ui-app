@@ -1,16 +1,13 @@
-import React from "react";
+import styles from "../app/main.module.css";
 
 interface PawnProps {
-  color: "white" | "black";
-  position: [number, number];
+  position: number;
+  color: "red" | "blue";
 }
 
-const Pawn: React.FC<PawnProps> = ({ color, position }) => {
-  const [x, y] = position;
-
-  const className = `bg-${color}-500 rounded-full w-10 h-10 absolute`;
-
-  return <div className={className} />;
-};
-
-export default Pawn;
+export default function Pawn(props: PawnProps) {
+  const { color, position } = props;
+  const str = `bg-` + color + `-500 ${styles["pawn"]}`;
+  console.log(str);
+  return <div className={str}></div>;
+}
