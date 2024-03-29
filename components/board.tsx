@@ -7,7 +7,7 @@ interface BoardProps {
 
 export default function Board({ size }: BoardProps) {
   const squares = [];
-
+  let even = false;
   for (let i = size * size; i >= 1; i--) {
     squares.push(<BoardSquare key={i} value={i.toString()} />);
   }
